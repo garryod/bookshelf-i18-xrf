@@ -4,7 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "notebook_env"
-dependencies = ["h5py", "xraylib", "numpy", "hdf5plugin", "swmr_tools", "blosc"]
+dependencies = [
+    "h5py",
+    "xraylib",
+    "numpy",
+    "hdf5plugin",
+    "swmr_tools<0.7.0",
+    "blosc",
+]
 dynamic = ["version"]
 
 [project.optional-dependencies]
