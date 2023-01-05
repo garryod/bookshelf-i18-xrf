@@ -13,7 +13,7 @@ EXPOSE 8888
 
 LABEL uk.ac.diamond.bookshelf.runlabel="podman run --rm --publish 8888:8888 IMAGE"
 
-ENTRYPOINT ["jupyter-lab", "--ip=0.0.0.0", "--allow-root"]
+CMD ["jupyter-lab", "--ip=0.0.0.0", "--allow-root"]
 
 FROM python:${PYTHON_VERSION}-slim as processing
 
