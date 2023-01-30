@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: bookshelf-i18-xrf
+  annotations:
+    github.com/project-slug: DiamondLightSource/bookshelf-i18-xrf
+spec:
+  type: other
+  lifecycle: unknown
+  owner: enu43627
