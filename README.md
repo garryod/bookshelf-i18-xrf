@@ -1,10 +1,9 @@
 # i18 xrf Notebook
 
-This notebook is used to perform xrf processing of i18 data. This repo follows the bookshelf structure, meaning it will be automatically deployed in three varieties:
+This notebook is used to perform xrf processing of i18 data. This repo follows the bookshelf structure, meaning it will be automatically deployed in two varieties:
 
 1. An interactive - jupyterlab - environment, for running both locally and hosted on the hosted JupyterLab instance
 2. A headless processing image, for running both locally and as a cluster job
-3. A service, which can be hosted on the k8s cluster, and accessed via a REST API
 
 ## Releasing a version
 
@@ -40,10 +39,4 @@ or
 ```
 module load bookshelf/bookshelf-i18-xrf/latest
 bookshelf-i18-xrf-processing
-```
-
-### Service (local)
-
-```
-podman run --publish 8000:8000 ghcr.io/diamondlightsource/bookshelf-template/service:latest
 ```
